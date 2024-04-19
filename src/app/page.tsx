@@ -1,20 +1,19 @@
 import { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Home",
   description: "Home page",
 };
 
-const Home = () => {
+export default function HomePage() {
   return (
     <div>
       <h1>Welcome to the Finance Pro</h1>
-      <Link href="/contact" className="rounded-lg border">
-        Contact page
-      </Link>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+        laudantium quae perspiciatis nam fugit debitis repellat illo
+        praesentium! Natus, ad?
+      </p>
     </div>
   );
-};
-
-export default Home;
+}
